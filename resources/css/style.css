@@ -59,6 +59,10 @@ h2::after {
   padding: 80px 30px;
 }
 
+section {
+  width: 100%;
+}
+
 /*----------------------------------*/
 /*-----------Header-----------------*/
 header {
@@ -67,6 +71,7 @@ header {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -94,7 +99,29 @@ header {
   margin-bottom: 30px;
 }
 
+/*--------- Links----------- */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+  padding: 1px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
 /* Styles for Button */
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
 
 .btn:link,
 .btn:visited {
@@ -110,7 +137,7 @@ header {
 .btn-full:visited {
   color: #fff;
   background-color: #e67e22;
-  border: 1px solid #e67e22;
+  border-bottom: 1px solid #e67e22;
   margin-right: 15px;
 }
 
@@ -182,6 +209,7 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   transition: border-bottom cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 0;
 }
 
 .main-nav li a:hover,
@@ -235,7 +263,8 @@ ion-icon {
 /* --------How it Works--------- */
 
 .section-steps {
-  margin-top: 40px;
+  padding: 60px 0px;
+  background-color: #f4f4f4;
 }
 
 .app-screen {
@@ -299,7 +328,8 @@ ion-icon {
 /* Section Cities------------- */
 
 .section-cities {
-  margin-top: 40px;
+  padding: 60px 0px;
+  /* background-color: #f4f4f4; */
 }
 
 .citiesContainer {
@@ -307,6 +337,7 @@ ion-icon {
   flex-flow: row wrap;
   margin-left: 10%;
   width: 80%;
+  margin-top: 10px;
 }
 
 .card {
@@ -318,19 +349,103 @@ ion-icon {
   width: 100%;
   height: auto;
   transition: transform 4s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.4s;
+  margin-bottom: 15px;
 }
 
 .city-photo {
   width: 100%;
 }
 
-.cityFeature li {
+.cityFeature {
   list-style: none;
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .cardIcon {
-  width: 20px;
-  height: 20px;
+  margin-right: 10px;
+}
+
+/*--------------Testimonals-----------*/
+
+.section-testimonals {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./img/back-customers.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  padding: 60px 30px;
+}
+
+.testimonalCard {
+  position: relative;
+  margin-top: 60px;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+blockquote::before {
+  content: "\201c";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  display: flex;
+  font-size: 90%;
+  margin-top: 25px;
+  align-items: center;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/*------------Subscription Plans-------*/
+.section-subscriptionPlans {
+  padding: 60px 0px;
+  background-color: #f4f4f4;
+}
+
+.plans-details {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.plan-card {
+  display: flex;
+  width: 20%;
+  flex-flow: column;
+  margin: 0px 3%;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.plan-card li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 155%;
+}
+
+.details ul li ion-icon {
+  margin-right: 15px;
 }
