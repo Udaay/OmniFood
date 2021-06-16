@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+/* Tablet devices */
+@media only screen and (max-width: 767px) {
+}
+
+/* Mobile devices width in range 0 to 480px */
+@media only screen and (max-width: 480px) {
+}

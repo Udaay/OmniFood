@@ -76,9 +76,9 @@ header {
 
 .hero-text-box {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 30%;
-  transform: translate(-50%, -20%);
+  transform: translate(-35%, -50%);
   width: fit-content;
 }
 
@@ -124,7 +124,8 @@ a:active {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -134,7 +135,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   color: #fff;
   background-color: #e67e22;
   border-bottom: 1px solid #e67e22;
@@ -148,7 +150,9 @@ a:active {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   color: #fff;
   border: 1px solid #bf6516;
 }
@@ -188,7 +192,6 @@ a:active {
 }
 
 .section-features > .row {
-  width: 1140px;
   margin: 0 auto;
 }
 
@@ -427,6 +430,12 @@ cite img {
   margin-top: 40px;
 }
 
+.plan-card div:first-child {
+  background-color: rgb(226, 225, 225, 0.7);
+  box-shadow: 0 2px 2px rgb(226, 225, 225, 0.9);
+  border-radius: 20px;
+}
+
 .plan-card {
   display: flex;
   width: 20%;
@@ -434,9 +443,38 @@ cite img {
   margin: 0px 3%;
   justify-content: center;
   align-items: center;
-  height: 350px;
+  /* height: 350px; */
   background-color: #fff;
   border-radius: 20px;
+  /* padding: 15px; */
+  box-shadow: 0 2px 2px #c2c2c2;
+}
+
+.plan-card div {
+  width: 100%;
+  border-bottom: 1px solid rgba(214, 214, 214, 0.904);
+  padding: 15px;
+}
+
+.plan-card div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 200;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-per-meal {
+  font-size: 80%;
 }
 
 .plan-card li {
@@ -444,8 +482,127 @@ cite img {
   display: flex;
   justify-content: flex-start;
   line-height: 155%;
+  padding: 5px 0px;
 }
 
 .details ul li ion-icon {
   margin-right: 15px;
+}
+
+/*----------------Form--------------- */
+
+.section-form {
+  padding-top: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  font-size: 90%;
+}
+
+.contact-form {
+  width: 40%;
+}
+
+.form-row {
+  display: flex;
+  margin: 15px 0px;
+  align-items: center;
+}
+
+.form-row label {
+  width: 45%;
+  margin-right: 10%;
+}
+
+.form-row > span {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #cccc;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*------------------Footer---------- */
+
+footer {
+  background-color: #333;
+  padding: 20px 10px 10px;
+  font-size: 80%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.footer-social ul li,
+.footer-navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-social ul li:last-child,
+.footer-navigation ul li:last-child {
+  margin-right: 0px;
+}
+
+.footer-navigation li a:link,
+.footer-navigation li a:visited {
+  color: #999999;
+  text-decoration: none;
+  border: 0;
+}
+
+.footer-navigation li a:hover,
+.footer-navigation li a:active {
+  color: #e6e6e6 !important;
+}
+
+.footer-social ul li ion-icon {
+  height: 25px;
+  margin: 0;
+  color: #999999 !important;
+}
+
+.copyright {
+  color: #999999;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logo-facebook,
+.logo-twitter,
+.logo-instagram,
+.logo-google {
+  transition: color 0.2s;
+}
+.logo-facebook:hover {
+  color: #1877f2 !important;
+}
+.logo-twitter:hover {
+  color: #1da1f2 !important;
+}
+.logo-instagram:hover {
+  color: #c32aa3 !important;
+}
+.logo-google:hover {
+  color: #ea4335 !important;
 }
