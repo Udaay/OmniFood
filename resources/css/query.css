@@ -15,10 +15,23 @@
 }
 
 /* Tablet devices */
-@media only screen and (max-width: 767px) {
-  .cityFeatureList {
-    font-size: 60%;
+@media only screen and (max-width: 780px)  {
+
+  .section-subscriptionPlans{
+    font-size: 80%;
   }
+
+  .plan-card{
+    min-width: 
+    0;
+    width: 30%;
+    margin: 0px 2%;
+  }
+
+  .contact-form{
+    width: 80%;
+  }
+
   h1 { font-size: 180%; }
   h2 { font-size: 150%; }
 }
@@ -26,7 +39,27 @@
 /* Mobile devices width in range 0 to 480px */
 @media only screen and (max-width: 480px) {
 
-  section { padding: 25px 0; }
+  section { 
+    padding: 25px 0; 
+    font-size: 90%;
+  }
+
+  
+  .hero-text-box{
+    left: 40%;
+  }
+  
+  .main-nav{
+    display: none;
+  }
+
+  .row-center{
+    padding: 0px 1%;;
+  }
+
+  .row-logo {
+    flex-direction: row !important;
+  }
   .row {
     display: flex;
     flex-direction: column;
@@ -84,6 +117,21 @@
   }
 
   /*------------Cities--------------------- */
+
+  .section-cities{
+    padding: 30px 0px;
+  }
+
+  .citiesContainer{
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card{
+    width: 100%;
+    margin: 0;
+  }
 
   /* Testimonals-------------- */
 
