@@ -86,8 +86,8 @@ header {
 
 .long-copy {
   line-height: 145%;
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .box > p {
@@ -271,7 +271,7 @@ ion-icon {
 }
 
 .app-screen {
-  width: 30%;
+  width: 200px;
 }
 
 .row-center {
@@ -287,6 +287,8 @@ ion-icon {
 
 .stepsContainer {
   margin-top: 40px;
+  max-width: 400px;
+  min-width: 400px;
 }
 
 .work-steps {
@@ -295,8 +297,11 @@ ion-icon {
   margin-bottom: 30px;
 }
 
-.work-steps p {
+.howItWorks{
+  margin: 0 auto;
   width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 .work-steps:last-of-type {
@@ -430,6 +435,10 @@ cite img {
   margin-top: 40px;
 }
 
+.planCard-head {
+  height: 40%;
+}
+
 .plan-card div:first-child {
   background-color: rgb(226, 225, 225, 0.7);
   box-shadow: 0 2px 2px rgb(226, 225, 225, 0.9);
@@ -441,13 +450,11 @@ cite img {
   width: 20%;
   flex-flow: column;
   margin: 0px 3%;
-  justify-content: center;
   align-items: center;
-  /* height: 350px; */
   background-color: #fff;
   border-radius: 20px;
-  /* padding: 15px; */
   box-shadow: 0 2px 2px #c2c2c2;
+  min-width: 250px;
 }
 
 .plan-card div {
@@ -489,6 +496,9 @@ cite img {
   margin-right: 15px;
 }
 
+.details {
+  height: 80%;
+}
 /*----------------Form--------------- */
 
 .section-form {

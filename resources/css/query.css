@@ -4,6 +4,16 @@
 @media only screen and (max-width: 1023px) {
 }
 
+@media only screen and (max-width: 960px) {
+
+  .long-copy {
+    line-height: 125%;
+    width:50%;
+    margin-left: 25%;
+  }
+  
+}
+
 /* Tablet devices */
 @media only screen and (max-width: 767px) {
 }
