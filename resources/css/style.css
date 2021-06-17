@@ -72,6 +72,7 @@ header {
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .hero-text-box {
@@ -368,7 +369,7 @@ ion-icon {
   list-style: none;
   display: flex;
   align-items: baseline;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 10px;
 }
 

@@ -2,22 +2,126 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .cityFeature {
+  }
 }
 
 @media only screen and (max-width: 960px) {
-
   .long-copy {
     line-height: 125%;
-    width:50%;
+    min-width: 50%;
     margin-left: 25%;
   }
-  
 }
 
 /* Tablet devices */
 @media only screen and (max-width: 767px) {
+  .cityFeatureList {
+    font-size: 60%;
+  }
+  h1 { font-size: 180%; }
+  h2 { font-size: 150%; }
 }
 
 /* Mobile devices width in range 0 to 480px */
 @media only screen and (max-width: 480px) {
+
+  section { padding: 25px 0; }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .long-copy {
+    margin-left: 10% !important;
+  }
+
+  .box {
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-features {
+    padding: 50px 30px;
+  }
+
+
+
+  /*------------- Meals showCase----------- */
+  .meals-showcase li {
+    width: 50%;
+  }
+
+  .meals-showcase {
+    flex-wrap: wrap;
+  }
+
+  /* How it works ---------------------*/
+
+  .section-steps {
+    padding: 40px 20px;
+  }
+
+  .stepsContainer {
+    padding: 0px 25px;
+  }
+
+  .howItWorks {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .work-steps:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  .app-screen {
+    width: 150px;
+  }
+
+  /*------------Cities--------------------- */
+
+  /* Testimonals-------------- */
+
+  blockquote::before {
+    margin-top: 5px;
+  }
+
+  .section-testimonals {
+    padding: 40px 30px;
+  }
+
+  .testimonalCard{
+    margin-top: 40px;
+  }
+
+  cite{
+    margin-top: 10px;
+  }
+
+  /* Plams Details------------ */
+
+
+  .plans-details{
+    flex-direction: column;
+  }
+
+  .plan-card{
+    width: 90%;
+    flex-flow: column;
+    margin: 2% 5%;
+  }
+
+  .section-subscriptionPlans {
+    padding: 30px 0px;
+}
+
+/* form------- */
+.contact-form{
+width: 90%;
+}
 }
