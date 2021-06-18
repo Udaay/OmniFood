@@ -15,46 +15,104 @@
 }
 
 /* Tablet devices */
-@media only screen and (max-width: 780px)  {
-
-  .section-subscriptionPlans{
+@media only screen and (max-width: 780px) {
+  .section-subscriptionPlans {
     font-size: 80%;
   }
 
-  .plan-card{
-    min-width: 
-    0;
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    padding: 0px 20px;
+    padding-top: 15px;
+  }
+
+  .mobile-nav-icon {
+    display: flex;
+    margin: 20px;
+    font-size: 80%;
+    flex-grow: 3;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 8px 20px;
+  }
+
+  .plan-card {
+    min-width: 0;
     width: 30%;
     margin: 0px 2%;
   }
 
-  .contact-form{
+  .contact-form {
     width: 80%;
   }
 
-  h1 { font-size: 180%; }
-  h2 { font-size: 150%; }
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+
+  .logo-black {
+    margin-left: 5%;
+    height: 70px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited,
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 2px 0px;
+  }
+
+  .sticky .main-nav {
+    padding-top: 4px;
+  }
+  .sticky .main-nav li {
+    margin-top: 4px;
+  }
+
+  /*------------Cities--------------------- */
+
+  .section-cities {
+    padding: 30px 0px;
+  }
+
+  .citiesContainer {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /* Mobile devices width in range 0 to 480px */
 @media only screen and (max-width: 480px) {
-
-  section { 
-    padding: 25px 0; 
+  section {
+    padding: 25px 0;
     font-size: 90%;
   }
 
-  
-  .hero-text-box{
+  .logo {
+    height: 70px;
+  }
+  .hero-text-box {
     left: 40%;
   }
-  
-  .main-nav{
-    display: none;
+
+  .row-center {
+    padding: 0px 1%;
   }
 
-  .row-center{
-    padding: 0px 1%;;
+  .mobile-nav-icon {
+    margin: 13px 30px 0px 10px;
   }
 
   .row-logo {
@@ -80,8 +138,6 @@
   .section-features {
     padding: 50px 30px;
   }
-
-
 
   /*------------- Meals showCase----------- */
   .meals-showcase li {
@@ -116,23 +172,6 @@
     width: 150px;
   }
 
-  /*------------Cities--------------------- */
-
-  .section-cities{
-    padding: 30px 0px;
-  }
-
-  .citiesContainer{
-    flex-direction: column;
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .card{
-    width: 100%;
-    margin: 0;
-  }
-
   /* Testimonals-------------- */
 
   blockquote::before {
@@ -143,22 +182,21 @@
     padding: 40px 30px;
   }
 
-  .testimonalCard{
+  .testimonalCard {
     margin-top: 40px;
   }
 
-  cite{
+  cite {
     margin-top: 10px;
   }
 
   /* Plams Details------------ */
 
-
-  .plans-details{
+  .plans-details {
     flex-direction: column;
   }
 
-  .plan-card{
+  .plan-card {
     width: 90%;
     flex-flow: column;
     margin: 2% 5%;
@@ -166,10 +204,10 @@
 
   .section-subscriptionPlans {
     padding: 30px 0px;
-}
+  }
 
-/* form------- */
-.contact-form{
-width: 90%;
-}
+  /* form------- */
+  .contact-form {
+    width: 90%;
+  }
 }
